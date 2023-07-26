@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Area_y_Perimetro.MainPage">
+    <ScrollView>
+    <StackLayout Margin="20,20,20,20" Spacing="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+            </Grid>
+        
+        <Image Source="areaperimetro.jpg" HeightRequest="300" WidthRequest="400" Grid.Row="1" Grid.Column="0"/>
+
+            <Label Text="Area de un Rectángulo" TextColor="WhiteSmoke" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="EntryArea" Placeholder="Ingrese la longitud del lado x" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="EntryArea1" Placeholder="Ingrese la longitud del lado y" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="EntryAreaResultado" Placeholder="Area" Grid.Row="2" Grid.Column="0"/>
+            <Button x:Name="BtnArea" Text="Calcular Area" HeightRequest="60" Clicked="BtnArea_Clicked" Grid.Row="2" Grid.Column="0"/>
+
+            <Label Text="Perimetro de un Rectángulo" TextColor="WhiteSmoke" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="EntryPerimetro" Placeholder="Ingrese la longitud del lado x" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="EntryPerimetro1" Placeholder="Ingrese la longitud del lado y" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="EntryPerimetroResultado" Placeholder="Perimetro" Grid.Row="3" Grid.Column="0"/>
+            <Button x:Name="BtnPerimetro" Text="Calcular Perimetro" HeightRequest="60" Clicked="BtnPerimetro_Clicked" Grid.Row="3" Grid.Column="0"/>
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+ 
